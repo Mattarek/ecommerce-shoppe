@@ -1,13 +1,9 @@
-// import Shoppe from '@assets/Shoppe.svg'
-// import profile from '@assets/Profile.svg'
-// import cart from '@assets/Cart.svg'
-// import search from '@assets/Search.svg'
-import {search, cart, profile, Shoppe} from '@assets/'
+import {search, cart, profile, Shoppe} from '@assets/index'
 import './navbar.scss'
 
 export const Navbar = () => {
   return (
-    <div className="container">
+    <div className="navbar">
       <div className="navbar__logo">
         <img src={Shoppe} alt="Shoope icon" />
       </div>

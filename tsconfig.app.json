@@ -23,9 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "baseUrl": "src",
-  "paths": {
-    "@assets/*": ["src/assets/*"]
-  },
-  "include": ["src"]
+  "include": ["src", "index.d.ts"]
 }
