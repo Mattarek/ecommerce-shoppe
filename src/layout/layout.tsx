@@ -1,5 +1,9 @@
-import React from 'react'
+import {Navbar} from '../components/Narbar/Navbar'
 
-export const layout = () => {
-  return <div>layout</div>
+export const Layout = () => {
+  return (
+    <>
+      <Navbar />
+    </>
+  )
 }

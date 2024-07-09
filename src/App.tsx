@@ -1,5 +1,12 @@
+import {Layout} from './layout/layout'
+import './styles/index.scss'
+
 function App() {
-  return <></>
+  return (
+    <>
+      <Layout />
+    </>
+  )
 }
 
 export default App
