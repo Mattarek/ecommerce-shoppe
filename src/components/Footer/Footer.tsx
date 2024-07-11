@@ -4,7 +4,7 @@ import './footer.scss'
 export const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer_description">
+      <div className="footer__description">
         <div className="footer__menu">
           <p>CONTACT</p>
           <p>TERMS OF SERVICES</p>
@@ -14,8 +14,8 @@ export const Footer = () => {
           <p>© 2021 Shelly. Terms of use and privacy policy.</p>
         </div>
       </div>
-      <div className="footer_search">
-        <div className="footer_input">
+      <div className="footer__search">
+        <div className="footer__input">
           <input
             className="newsletter__input"
             type="text"
