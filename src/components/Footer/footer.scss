@@ -3,14 +3,29 @@
     flex-direction: row;
     flex-basis: 100%;
     justify-content: space-between;
-    border-top: 0.04rem solid black;
+    border-top: 0.04rem solid #D8D8D8;
 
-    .footer__menu {
-        display: flex;
-        justify-content: space-between;
+    &__description {
+        flex-basis: 40%;
     }
 
-    .footer__description {}
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+
+
+        .footer__menu--item {
+            font-size: .75rem;
+            color: #707070;
+            font-weight: 400;
+            line-height: 1.6875rem;
+        }
+    }
+
+
+
+
 
     .footer__search {
         display: flex;

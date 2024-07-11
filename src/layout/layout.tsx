@@ -9,7 +9,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', margin: '3vh 5vw' }}>
       <Navbar />
-      {/* {children} */}
+      {children}
       <div style={{ display: 'block', height: '60vh', width: '100%' }}></div>
       <Footer />
     </div>

@@ -6,9 +6,9 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer__description">
         <div className="footer__menu">
-          <p>CONTACT</p>
-          <p>TERMS OF SERVICES</p>
-          <p>SHIPPING AND RETURNS</p>
+          <p className="footer__menu--item">CONTACT</p>
+          <p className="footer__menu--item">TERMS OF SERVICES</p>
+          <p className="footer__menu--item">SHIPPING AND RETURNS</p>
         </div>
         <div className="footer__copyright">
           <p>© 2021 Shelly. Terms of use and privacy policy.</p>

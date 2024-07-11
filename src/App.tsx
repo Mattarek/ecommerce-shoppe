@@ -3,9 +3,9 @@ import './styles/index.scss'
 
 function App() {
   return (
-    <>
-      <Layout />
-    </>
+    <Layout>
+      <div></div>
+    </Layout>
   )
 }
 
