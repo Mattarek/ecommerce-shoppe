@@ -1,13 +1,13 @@
-import {search, cart, profile, shoppe} from '@assets/index'
+import { search, cart, profile, shoppe } from '@assets/index'
 import './navbar.scss'
 
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar__logo">
+      <header className="navbar__logo">
         <img src={shoppe} alt="Shoope icon" />
-      </div>
-      <div className="navbar__menu">
+      </header>
+      <nav className="navbar__menu">
         <div className="navbar__list navbar__links">
           <div className="navbar__item">Shop</div>
           <div className="navbar__item">Blog</div>
@@ -19,7 +19,7 @@ export const Navbar = () => {
           <img src={cart} alt="Cart icon" />
           <img src={profile} alt="Profile icon" />
         </div>
-      </div>
+      </nav>
     </div>
   )
 }

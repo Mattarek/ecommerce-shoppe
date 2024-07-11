@@ -15,6 +15,5 @@
   "quoteProps": "as-needed",
   "trailingComma": "none",
   "eslintIntegration": true,
-  "jsxSingleQuote": false,
-  "vueIndentScriptAndStyle": false
+  "jsxSingleQuote": false
 }

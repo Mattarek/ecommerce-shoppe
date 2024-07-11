@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_description {}
+
+    .footer_search {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+
+        .footer_input {
+            display: flex;
+            justify-content: center;
+
+            .newsletter__input {
+                border: none;
+                background: url(../../assets//arrow.svg) no-repeat;
+            }
+        }
+
+        .footer__icons {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
