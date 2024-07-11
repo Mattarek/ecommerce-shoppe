@@ -23,10 +23,12 @@ export const Footer = () => {
           />
         </div>
         <div className="footer__icons">
-          <img src={linkedin} alt="Linkedin logo" />
-          <img src={facebook} alt="Facebook logo" />
-          <img src={instagram} alt="Instagram logo" />
-          <img src={twitter} alt="Twitter logo" />
+          <div className="footer__icons--container">
+            <img src={linkedin} alt="Linkedin logo" />
+            <img src={facebook} alt="Facebook logo" />
+            <img src={instagram} alt="Instagram logo" />
+            <img src={twitter} alt="Twitter logo" />
+          </div>
         </div>
       </div>
     </footer>
