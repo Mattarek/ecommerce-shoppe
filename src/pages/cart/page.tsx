@@ -1,3 +1,3 @@
-export const page = () => {
+export const Cart = () => {
   return <div>page</div>
 }
