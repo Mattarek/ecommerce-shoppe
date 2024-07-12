@@ -1,4 +1,5 @@
 import { search, cart, profile, shoppe } from '@assets/index'
+import { NavLink } from 'react-router-dom'
 import './navbar.scss'
 
 export const Navbar = () => {
@@ -9,9 +10,15 @@ export const Navbar = () => {
       </header>
       <nav className="navbar__menu">
         <div className="navbar__list navbar__links">
-          <div className="navbar__item">Shop</div>
-          <div className="navbar__item">Blog</div>
-          <div className="navbar__item">Our Story</div>
+          <NavLink to="/shop" className="navbar__item">
+            Shop
+          </NavLink>
+          <NavLink to="/blog" className="navbar__item">
+            Blog
+          </NavLink>
+          <NavLink to="/ourstory" className="navbar__item">
+            Our Story
+          </NavLink>
         </div>
         <div className="navbar__separator"></div>
         <div className="navbar__item--menu navbar__icons">
