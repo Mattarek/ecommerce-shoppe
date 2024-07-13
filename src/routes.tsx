@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Home } from '@pages/page'
 import { Cart } from '@pages/cart/page'
+import { NotFound } from '@pages/notFound/notFound'
 
 export const router = createBrowserRouter([
   {
@@ -12,15 +13,12 @@ export const router = createBrowserRouter([
         path: '/cart'
       },
       {
-        element: <Home />,
         path: '/shop'
       },
       {
-        element: <Home />,
         path: '/blog'
       },
       {
-        element: <Home />,
         path: '/story'
       },
       {
@@ -42,11 +40,11 @@ export const router = createBrowserRouter([
       {
         element: <Home />,
         path: '/provacy'
+      },
+      {
+        element: <NotFound />,
+        path: '*'
       }
     ]
-  },
-  {
-    element: <Home />,
-    path: '*'
   }
 ])
