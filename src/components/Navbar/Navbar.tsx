@@ -4,10 +4,10 @@ import './navbar.scss'
 
 export const Navbar = () => {
   return (
-    <div className="navbar">
-      <header className="navbar__logo">
+    <header className="navbar">
+      <div className="navbar__logo">
         <img src={shoppe} alt="Shoope icon" />
-      </header>
+      </div>
       <nav className="navbar__menu">
         <div className="navbar__list navbar__links">
           <NavLink to="/shop" className="navbar__item">
@@ -27,6 +27,6 @@ export const Navbar = () => {
           <img src={profile} alt="Profile icon" />
         </div>
       </nav>
-    </div>
+    </header>
   )
 }

@@ -3,6 +3,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid var(--color-gray);
 
     .navbar__logo {
         display: flex;
