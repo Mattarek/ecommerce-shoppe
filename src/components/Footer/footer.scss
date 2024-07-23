@@ -1,6 +1,8 @@
 @use '../../styles/colors';
 
 .footer {
+    flex-grow: 1;
+
     &__input {
         position: relative;
     }
@@ -29,7 +31,7 @@
     &__contact {
         display: flex;
         flex-direction: column;
-        padding: 2rem 0 0 0;
+        padding-top: 2rem;
         line-height: 2rem;
 
     }
@@ -80,35 +82,65 @@
         &__contact {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            width: 55%;
+            font-size: 1rem;
+            padding: 0;
+        }
 
+        &__input-field {
+            line-height: 2rem;
+            font-size: 1rem;
         }
 
         &__desktop {
             display: flex;
             flex-direction: row;
             width: 100%;
+            padding-top: 3rem;
 
             &-left {
                 display: flex;
                 flex-direction: column;
                 justify-content: left;
-                width: 50%;
+                width: 65%;
             }
 
             &-right {
                 display: flex;
                 flex-direction: column;
                 justify-content: right;
-                width: 50%;
+                width: 35%;
+            }
+        }
+
+        &__socials {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            padding: 0;
+
+            &-position {
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                margin-top: 3rem;
             }
         }
 
         &__copyright {
-            justify-content: right;
+            padding-bottom: 1rem;
+            padding: 2rem 0;
         }
 
         &__mobile {
             display: none;
+        }
+
+        &__input-arrow {
+            position: absolute;
+            right: 0px;
+            top: .75rem;
         }
     }
 }

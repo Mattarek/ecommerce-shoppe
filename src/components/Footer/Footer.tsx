@@ -68,10 +68,13 @@ export const Footer = () => {
             />
             <img src={arrow} alt="Arrow from input" className="footer__input-arrow" />
           </div>
-          <div>
-            <img src={facebook} alt="" />
-            <img src={instagram} alt="" />
-            <img src={twitter} alt="" />
+          <div className="footer__socials">
+            <div className="footer__socials-position">
+              <img src={linkedin} alt="Linkedin logo" />
+              <img src={facebook} alt="Facebook logo" />
+              <img src={instagram} alt="Instagram logo" />
+              <img src={twitter} alt="Twitter logo" />
+            </div>
           </div>
         </div>
       </div>
