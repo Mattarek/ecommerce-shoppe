@@ -83,7 +83,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 55%;
+            width: 65%;
             font-size: 1rem;
             padding: 0;
         }
@@ -145,4 +145,11 @@
     }
 }
 
-@media(min-width: 1440px) {}
+@media(min-width: 1440px) {
+    .footer {
+
+        &__contact {
+            width: 60%;
+        }
+    }
+}
