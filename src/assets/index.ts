@@ -12,6 +12,7 @@ import twitter from './twitter.svg'
 import cartOne from './cartOne.svg'
 import elipse from './elipse.svg'
 import line from './line.svg'
+import lineFooter from './lineFooter.svg'
 
 export {
   search,
@@ -27,5 +28,6 @@ export {
   twitter,
   cartOne,
   elipse,
-  line
+  line,
+  lineFooter
 }

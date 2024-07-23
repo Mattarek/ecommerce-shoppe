@@ -6,10 +6,10 @@ export const Layout = () => {
   return (
     <div className="container">
       <Navbar />
-      {/* <main>
+      <main>
         <Outlet />
       </main>
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }
