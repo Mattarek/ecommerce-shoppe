@@ -1,114 +1,117 @@
-@use '../../styles/colors.scss'as *;
-
 .navbar {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid var(--color-gray);
 
-    .navbar__logo {
-        display: flex;
-        align-items: center;
+    &__cart {
+        margin-right: 1rem;
     }
 
-    .navbar__menu {
+    &__cartimg {
+        position: relative;
+        width: 2rem;
+    }
+
+    &__cartActiveOne {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        right: 39px;
+    }
+
+    &__elipse {
+        position: absolute;
+        top: -2px;
+        right: 34px;
+    }
+
+    &__mobile {
         display: flex;
         justify-content: right;
-        height: 3rem;
-        width: 50%;
-    }
-
-    .navbar__item--menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-basis: 25%;
-        margin-left: 1rem;
-    }
-
-    .navbar__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-basis: 35%;
-        margin-right: 1rem;
-
-        .navbar__item {
-            height: 1.5rem;
-            color: var(--color-black);
-            text-decoration: none;
-        }
-    }
-
-    .navbar__icons img {
-        height: 1.875rem;
-    }
-
-    .navbar__separator {
-        display: flex;
+        position: relative;
+        transform: scale(1.5);
         align-items: center;
     }
 
-    .navbar__separator::after {
-        content: '';
-        display: block;
-        height: 60%;
-        width: 0.125rem;
-        background-color: #929292;
-        margin: 0 1.25rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar__container {
-        flex-direction: column;
-        align-items: flex-start;
+    &__cartActive {
+        position: relative;
     }
 
-    .navbar__menu {
+    &__menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
         width: 30%;
     }
 
-    .navbar__item {
-        margin-left: 0;
-        justify-content: space-between;
-        margin-top: 0.625rem;
-    }
-
-    .navbar__separator {
+    &__desktop {
         display: none;
     }
 
-    .navbar__icons {
-        justify-content: flex-end;
-        width: 100%;
+
+    @media(min-width: 480px) {
+        .navbar {
+            &__menu {
+                width: 50%;
+            }
+        }
     }
 
-    .navbar__links {
-        justify-content: flex-start;
-        width: 100%;
-    }
-}
+    @media(min-width: 768px) {
+        .navbar {
+            &__mobile {
+                display: none;
+            }
 
-@media (max-width: 480px) {
-    .navbar__links {
-        flex-direction: column;
-        align-items: flex-start;
+            &__links {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+            }
+
+            &__item {
+                text-decoration: none;
+                color: black;
+            }
+
+            &__desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            &__separator {
+                display: flex;
+                align-items: center;
+            }
+
+            &__icons {
+                display: flex;
+                justify-content: space-between;
+                width: 33%
+            }
+
+            &__menu {
+                width: 45%;
+                align-items: center;
+            }
+        }
     }
 
-    .navbar__links div {
-        margin-right: 0;
-        margin-bottom: 0.625rem;
+    @media(min-width: 1080px) {
+        .navbar {
+            &__menu {
+                width: 40%;
+                align-items: center;
+            }
+        }
     }
 
-    .navbar__icons {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navbar__icons img {
-        margin-left: 0;
-        margin-bottom: 0.625rem;
+    @media(min-width: 1440px) {
+        .navbar {
+            &__menu {
+                width: 30%;
+                align-items: center;
+            }
+        }
     }
 }

@@ -1,16 +1,15 @@
 import { Footer, Navbar } from '@components/index'
-import { ReactNode } from 'react'
+import { Outlet } from 'react-router-dom'
 import './layout.scss'
-interface Props {
-  children: ReactNode
-}
 
-export const Layout = ({ children }: Props) => {
+export const Layout = () => {
   return (
     <div className="container">
       <Navbar />
-      <main>{children}</main>
-      <Footer />
+      {/* <main>
+        <Outlet />
+      </main>
+      <Footer /> */}
     </div>
   )
 }
