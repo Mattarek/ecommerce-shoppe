@@ -1,8 +1,6 @@
 @use '../../styles/colors';
 
 .footer {
-    flex-grow: 1;
-
     &__input {
         position: relative;
     }
@@ -10,12 +8,14 @@
     &__input-arrow {
         position: absolute;
         right: 0px;
+        top: 1.25rem;
     }
 
     &__input-field {
         border: none;
         border-bottom: 1px solid black;
         width: 100%;
+        padding: .75rem;
     }
 
     &__checkbox {
@@ -33,7 +33,6 @@
         flex-direction: column;
         padding-top: 2rem;
         line-height: 2rem;
-
     }
 
     &__socials {
@@ -91,6 +90,7 @@
         &__input-field {
             line-height: 2rem;
             font-size: 1rem;
+            padding: .75rem;
         }
 
         &__desktop {
@@ -140,7 +140,7 @@
         &__input-arrow {
             position: absolute;
             right: 0px;
-            top: .75rem;
+            top: 1.75rem;
         }
     }
 }
