@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@components/index'
+import { Footer, Navbar } from './'
 import { Outlet } from 'react-router-dom'
 import './layout.scss'
 

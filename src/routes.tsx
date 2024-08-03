@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Cart } from '@pages/cart/page'
-import { NotFound } from '@pages/notFound/notFound'
+import { NotFound } from '@pages/notFound/page'
 import { Layout } from './layout/layout'
 
 export const router = createBrowserRouter([
