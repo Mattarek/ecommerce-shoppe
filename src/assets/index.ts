@@ -13,6 +13,7 @@ import cartOne from './cartOne.svg'
 import elipse from './elipse.svg'
 import line from './line.svg'
 import lineFooter from './lineFooter.svg'
+import searchLoop from './searchLoop.svg'
 
 export {
   search,
@@ -29,5 +30,6 @@ export {
   cartOne,
   elipse,
   line,
-  lineFooter
+  lineFooter,
+  searchLoop
 }
