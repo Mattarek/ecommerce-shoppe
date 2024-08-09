@@ -1,11 +1,10 @@
-import { ReactNode } from 'react'
 import { searchLoop } from '@assets/index'
 import './SearchBar.scss'
 
 export const SearchBar = () => {
   return (
     <>
-      <img src={searchLoop} alt="Search loop" className="searchLoop"/>
+      <img src={searchLoop} alt="Search loop" className="searchLoop" />
       <input className="searchBar" placeholder="Search" />
     </>
   )
