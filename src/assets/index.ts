@@ -14,6 +14,14 @@ import elipse from './elipse.svg'
 import line from './line.svg'
 import lineFooter from './lineFooter.svg'
 import searchLoop from './searchLoop.svg'
+import {
+  HairPinSetof3,
+  HalErrings,
+  KaedeHairPinSetOf3,
+  LireEarring,
+  PlaineNeckle,
+  YukiHairPinSetOf3
+} from './products'
 
 export {
   search,
@@ -31,5 +39,11 @@ export {
   elipse,
   line,
   lineFooter,
-  searchLoop
+  searchLoop,
+  HairPinSetof3,
+  HalErrings,
+  KaedeHairPinSetOf3,
+  LireEarring,
+  PlaineNeckle,
+  YukiHairPinSetOf3
 }
