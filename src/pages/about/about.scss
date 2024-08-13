@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 2rem;
+  color: var(--color-black);
+
+  h1,
+  h5 {
+    font-size: 1.5rem;
+  }
+  img {
+    background-size: cover;
+    width: 100%;
+    border-radius: 0.25rem;
+    margin: 1rem 0 0.25rem;
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__header-about {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__topTrends {
+    margin: 2rem 0;
+    &-img {
+    }
+  }
+
+  &__produced {
+  }
+}

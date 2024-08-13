@@ -11,7 +11,7 @@ export const ProductsList = ({ products }: Props) => {
     <div className="product">
       <div className="product__information">
         <h2>Shop the Latest</h2>
-        <Link to="">View All</Link>
+        <Link to="productsList">View All</Link>
       </div>
       <ul className="product__list">
         {products.map(product => (
@@ -19,7 +19,7 @@ export const ProductsList = ({ products }: Props) => {
             <img className="product__image" src={product.photoUrl} alt={product.photoAlt} />
             <p className="product__name">{product.name}</p>
             <p className="product__price">
-              {product.currency} {product.price}
+              {product.currency} {product.price.toFixed(2)}
             </p>
           </li>
         ))}

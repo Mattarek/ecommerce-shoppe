@@ -9,7 +9,7 @@ import {
   elipse,
   line
 } from '@assets/index'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './navbar.scss'
 
 export const Navbar = () => {
@@ -36,9 +36,16 @@ export const Navbar = () => {
             <img src={line} alt="Separator line" />
           </div>
           <div className="navbar__icons">
-            <img src={search} alt="Search icon" />
-            <img src={cart} alt="Cart icon" />
-            <img src={profile} alt="Profile icon" />
+            <Link to="search">
+              <img src={search} alt="Search icon" />
+            </Link>
+            <Link to="cart">
+              <img src={cart} alt="Cart icon" />
+            </Link>
+
+            <Link to="myAccount">
+              <img src={profile} alt="Profile icon" />
+            </Link>
           </div>
         </div>
         <div className="navbar__mobile">

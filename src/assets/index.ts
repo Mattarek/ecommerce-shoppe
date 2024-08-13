@@ -14,6 +14,7 @@ import elipse from './elipse.svg'
 import line from './line.svg'
 import lineFooter from './lineFooter.svg'
 import searchLoop from './searchLoop.svg'
+import xIconForInput from './xIconForInput.svg'
 import {
   HairPinSetof3,
   HalErrings,
@@ -45,5 +46,6 @@ export {
   KaedeHairPinSetOf3,
   LireEarring,
   PlaineNeckle,
-  YukiHairPinSetOf3
+  YukiHairPinSetOf3,
+  xIconForInput
 }
