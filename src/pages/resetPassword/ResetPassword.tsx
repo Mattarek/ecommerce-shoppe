@@ -8,8 +8,14 @@ export const ResetPassword = () => {
       <p className="resetPassword__paragraph">
         If you've forgotten your password, enter your e-mail address and we'll send you an e-mail
       </p>
-      <input className="resetPassword__input" type="text" placeholder="Email" />
-      <img className="resetPassword__img" src={xIconForInput} alt="Delete input text icon" />
+
+      <div className="resetPassword__container-input">
+        <input className="resetPassword__input" type="text" placeholder="Email" />
+        <button className="resetPassword__clearButton">
+          <img className="resetPassword__img" src={xIconForInput} alt="Delete input text icon" />
+        </button>
+      </div>
+
       <button className="resetPassword__button">RESET PASSWORD</button>
     </div>
   )

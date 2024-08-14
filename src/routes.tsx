@@ -3,8 +3,10 @@ import { Cart } from '@pages/cart/page'
 import { NotFound } from '@pages/notFound/page'
 import { Layout } from './layout/layout'
 import { Home } from '@pages/home/Home'
-import { About } from '@pages/about/page'
+
 import { Privacy } from './pages/privacy/privacy'
+import { About } from '@pages/about/page'
+import { ResetPassword } from '@pages/resetPassword/ResetPassword'
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +27,8 @@ export const router = createBrowserRouter([
         path: '/blog'
       },
       {
-        path: '/story'
+        element: <About />,
+        path: '/about'
       },
       {
         path: '/product'
@@ -38,6 +41,10 @@ export const router = createBrowserRouter([
       },
       {
         path: '/recovery'
+      },
+      {
+        element: <ResetPassword />,
+        path: '/resetPassword'
       },
       {
         path: '/provacy'
