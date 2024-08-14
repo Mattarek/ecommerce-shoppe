@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid var(--color-gray);
 
   &__cart {
     margin-right: 1rem;
