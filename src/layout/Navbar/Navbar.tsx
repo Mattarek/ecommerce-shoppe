@@ -43,7 +43,7 @@ export const Navbar = () => {
               <img src={cart} alt="Cart icon" />
             </Link>
 
-            <Link to="myAccount">
+            <Link to="account">
               <img src={profile} alt="Profile icon" />
             </Link>
           </div>

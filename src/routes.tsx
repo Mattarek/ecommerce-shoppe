@@ -3,6 +3,8 @@ import { Cart } from '@pages/cart/page'
 import { NotFound } from '@pages/notFound/page'
 import { Layout } from './layout/layout'
 import { Home } from '@pages/home/Home'
+import { About } from '@pages/about/page'
+import { Privacy } from './pages/privacy/privacy'
 
 export const router = createBrowserRouter([
   {
@@ -26,24 +28,27 @@ export const router = createBrowserRouter([
         path: '/story'
       },
       {
-        element: <Layout />,
         path: '/product'
       },
       {
-        element: <Layout />,
         path: '/contact'
       },
       {
-        element: <Layout />,
         path: '/account'
       },
       {
-        element: <Layout />,
         path: '/recovery'
       },
       {
-        element: <Layout />,
         path: '/provacy'
+      },
+      {
+        element: <About />,
+        path: '/about'
+      },
+      {
+        element: <Privacy />,
+        path: '/privacy'
       },
       {
         element: <NotFound />,
