@@ -10,6 +10,7 @@ import {
   PlaineNeckle,
   YukiHairPinSetOf3
 } from '@assets/index'
+import { SearchBar } from '@components/SearchBar'
 
 const productsList: Product[] = [
   {
@@ -58,6 +59,7 @@ const productsList: Product[] = [
 export const Home = () => {
   return (
     <>
+      <SearchBar />
       <Hero />
       <ProductsList products={productsList} />
     </>

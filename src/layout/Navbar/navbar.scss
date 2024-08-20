@@ -1,9 +1,6 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 0.1rem solid var(--color-gray);
 
   &__cart {
     margin-right: 1rem;
@@ -50,6 +47,12 @@
     display: none;
   }
 
+  &__hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
   @media (min-width: 480px) {
     .navbar {
       &__menu {
@@ -59,44 +62,44 @@
   }
 
   @media (min-width: 768px) {
-    .navbar {
-      &__mobile {
-        display: none;
-      }
+    border-bottom: 0.1rem solid var(--color-gray);
 
-      &__links {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-      }
+    &__mobile {
+      display: none;
+    }
 
-      &__item {
-        text-decoration: none;
-        color: black;
-      }
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
 
-      &__desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-      }
+    &__item {
+      text-decoration: none;
+      color: black;
+    }
 
-      &__separator {
-        display: flex;
-        align-items: center;
-      }
+    &__desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
 
-      &__icons {
-        display: flex;
-        justify-content: space-between;
-        width: 33%;
-      }
+    &__separator {
+      display: flex;
+      align-items: center;
+    }
 
-      &__menu {
-        width: 45%;
-        align-items: center;
-      }
+    &__icons {
+      display: flex;
+      justify-content: space-between;
+      width: 33%;
+    }
+
+    &__menu {
+      width: 45%;
+      align-items: center;
     }
   }
 

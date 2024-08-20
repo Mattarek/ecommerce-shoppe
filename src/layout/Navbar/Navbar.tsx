@@ -11,13 +11,16 @@ import {
 } from '@assets/index'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.scss'
+import HamburgerMenu from '@components/HamburgerMenu/HamburgerMenu'
 
 export const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="navbar__logo">
-        <img src={shoppe} alt="Shoope icon" />
-      </div>
+      <Link to="/">
+        <div className="navbar__logo">
+          <img src={shoppe} alt="Shoope icon" />
+        </div>
+      </Link>
       <nav className="navbar__menu">
         <div className="navbar__desktop">
           <div className="navbar__links">
@@ -42,12 +45,12 @@ export const Navbar = () => {
             <Link to="cart">
               <img src={cart} alt="Cart icon" />
             </Link>
-
             <Link to="account">
               <img src={profile} alt="Profile icon" />
             </Link>
           </div>
         </div>
+
         <div className="navbar__mobile">
           <div className="navbar__cart">
             <img className="navbar__cartActive" src={cartActive} alt="Cart active icon" />
@@ -55,7 +58,9 @@ export const Navbar = () => {
             <img className="navbar__elipse" src={elipse} alt="Elipse" />
           </div>
           <div>
-            <img src={hamburger} alt="Hamburger icon" />
+            <button className="navbar__hamburger-button">
+              <HamburgerMenu />
+            </button>
           </div>
         </div>
       </nav>
