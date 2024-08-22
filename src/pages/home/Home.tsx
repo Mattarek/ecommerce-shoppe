@@ -1,6 +1,6 @@
 import { Hero } from '@components/Hero/Hero'
 import { ProductsList } from '@components/ProductsList'
-import { Product } from 'types/types'
+import { Product } from '../../types/types'
 
 import {
   HairPinSetof3,

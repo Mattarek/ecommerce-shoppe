@@ -47,7 +47,6 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
             <img src={image} alt={`Slide ${index}`} className="slider__image" />
           </div>
         ))}
-        {/* Clone the first slide to create an infinite loop effect */}
         <div className="slider__slide">
           <img src={images[0]} alt={`Slide 0`} className="slider__image" />
         </div>

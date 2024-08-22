@@ -4,6 +4,7 @@ import profile from './profile.svg'
 import search from './search.svg'
 import cartActive from './cartActive.svg'
 import hamburger from './hamburger.svg'
+import hamburgerX from './hamburgerX.svg'
 import instagram from './instagram.svg'
 import linkedin from './linkedin.svg'
 import arrow from './arrow.svg'
@@ -23,8 +24,12 @@ import {
   PlaineNeckle,
   YukiHairPinSetOf3
 } from './products'
+import Logout from './Logout.svg'
+import IconColor from './IconColor.svg'
 
 export {
+  Logout,
+  IconColor,
   search,
   cart,
   cartActive,
@@ -47,5 +52,6 @@ export {
   LireEarring,
   PlaineNeckle,
   YukiHairPinSetOf3,
-  xIconForInput
+  xIconForInput,
+  hamburgerX
 }

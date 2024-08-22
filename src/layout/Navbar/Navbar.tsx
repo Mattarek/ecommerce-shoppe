@@ -7,12 +7,18 @@ import {
   hamburger,
   cartOne,
   elipse,
-  line
+  line,
+  hamburgerX
 } from '@assets/index'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.scss'
 
-export const Navbar = () => {
+interface Props {
+  menuMobile: boolean
+  setMenuMobile: (menuMobile: boolean) => void
+}
+
+export const Navbar = ({ menuMobile, setMenuMobile }: Props) => {
   return (
     <header className="navbar">
       <div className="navbar__logo">
@@ -58,7 +64,18 @@ export const Navbar = () => {
             <img className="navbar__elipse" src={elipse} alt="Elipse" />
           </div>
           <div>
-            <img src={hamburger} alt="Hamburger icon" />
+            <button
+              className="navbar__menu-switch-button"
+              onClick={() => {
+                setMenuMobile(!menuMobile)
+              }}
+            >
+              {menuMobile ? (
+                <img src={hamburgerX} alt="Hamburger icon" />
+              ) : (
+                <img src={hamburger} alt="Hamburger icon" />
+              )}
+            </button>
           </div>
         </div>
       </nav>
