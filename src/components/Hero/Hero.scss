@@ -26,9 +26,10 @@
     }
 
     &-button {
+      cursor: pointer;
+      background-color: inherit;
       border: 0.15rem solid white;
       border-radius: 0.25rem;
-      background-color: inherit;
       padding: 0.5rem;
       width: 11rem;
       color: white;

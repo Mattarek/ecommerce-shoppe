@@ -16,7 +16,9 @@ export const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar__logo">
-        <img src={shoppe} alt="Shoope icon" />
+        <Link to="/">
+          <img src={shoppe} alt="Shoope icon" />
+        </Link>
       </div>
       <nav className="navbar__menu">
         <div className="navbar__desktop">
@@ -35,6 +37,7 @@ export const Navbar = () => {
           <div className="navbar__separator">
             <img src={line} alt="Separator line" />
           </div>
+
           <div className="navbar__icons">
             <Link to="search">
               <img src={search} alt="Search icon" />
@@ -42,12 +45,12 @@ export const Navbar = () => {
             <Link to="cart">
               <img src={cart} alt="Cart icon" />
             </Link>
-
             <Link to="account">
               <img src={profile} alt="Profile icon" />
             </Link>
           </div>
         </div>
+
         <div className="navbar__mobile">
           <div className="navbar__cart">
             <img className="navbar__cartActive" src={cartActive} alt="Cart active icon" />

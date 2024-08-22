@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import heroPhoto from '../../assets/hero.png'
 import './Hero.scss'
 
@@ -8,7 +9,9 @@ export const Hero = () => {
       <div className="hero__description">
         <h2 className="hero__description-title">Gold Big Hoops</h2>
         <h5 className="hero__description-price">$ 68.00</h5>
-        <button className="hero__description-button">View Product</button>
+        <Link to="products">
+          <button className="hero__description-button">View Product</button>
+        </Link>
       </div>
     </div>
   )
