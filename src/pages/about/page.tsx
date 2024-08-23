@@ -1,5 +1,5 @@
 import { producedWithCare, topTrends } from '@assets/about'
-import './About.scss'
+import './about.scss'
 
 export const About = () => {
   return (

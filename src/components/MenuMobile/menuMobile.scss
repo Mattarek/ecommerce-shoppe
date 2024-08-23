@@ -1,0 +1,37 @@
+.menuMobile {
+  &__container {
+    list-style: none;
+    border-bottom: 0.15rem solid var(--color-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    a {
+      color: var(--color-black);
+      text-decoration: none;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+
+    a {
+      line-height: 1rem;
+    }
+  }
+
+  &__link {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+
+  &__account-method {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  &__account-item {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+}

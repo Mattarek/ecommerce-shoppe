@@ -24,8 +24,12 @@ import {
   PlaineNeckle,
   YukiHairPinSetOf3
 } from './products'
+import Logout from './Logout.svg'
+import IconColor from './IconColor.svg'
 
 export {
+  Logout,
+  IconColor,
   search,
   cart,
   cartActive,

@@ -1,5 +1,5 @@
 import { xIconForInput } from '@assets/index'
-import './ResetPassword.scss'
+import './resetPassword.scss'
 
 export const ResetPassword = () => {
   return (

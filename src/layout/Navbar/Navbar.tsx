@@ -7,20 +7,26 @@ import {
   hamburger,
   cartOne,
   elipse,
-  line
+  line,
+  hamburgerActive
 } from '@assets/index'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.scss'
 import HamburgerMenu from '@components/HamburgerMenu/HamburgerMenu'
 
-export const Navbar = () => {
+interface Props {
+  menuMobile: boolean
+  setMenuMobile: (menuMobile: boolean) => void
+}
+
+export const Navbar = ({ menuMobile, setMenuMobile }: Props) => {
   return (
     <header className="navbar">
-      <Link to="/">
-        <div className="navbar__logo">
+      <div className="navbar__logo">
+        <Link to="/">
           <img src={shoppe} alt="Shoope icon" />
-        </div>
-      </Link>
+        </Link>
+      </div>
       <nav className="navbar__menu">
         <div className="navbar__desktop">
           <div className="navbar__links">
@@ -38,6 +44,7 @@ export const Navbar = () => {
           <div className="navbar__separator">
             <img src={line} alt="Separator line" />
           </div>
+
           <div className="navbar__icons">
             <Link to="search">
               <img src={search} alt="Search icon" />
@@ -58,8 +65,17 @@ export const Navbar = () => {
             <img className="navbar__elipse" src={elipse} alt="Elipse" />
           </div>
           <div>
-            <button className="navbar__hamburger-button">
-              <HamburgerMenu />
+            <button
+              className="navbar__menu-switch-button"
+              onClick={() => {
+                setMenuMobile(!menuMobile)
+              }}
+            >
+              {menuMobile ? (
+                <img src={hamburgerActive} alt="Hamburger icon" />
+              ) : (
+                <img src={hamburger} alt="Hamburger icon" />
+              )}
             </button>
           </div>
         </div>
