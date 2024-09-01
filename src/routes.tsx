@@ -1,13 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Cart } from '@pages/cart/Cart'
-import { NotFound } from '@pages/notFound/NotFound'
-import { Layout } from './layout/layout'
-import { Home } from '@pages/home/Home'
-
-import { Privacy } from './pages/privacy/Privacy'
-import { About } from '@pages/about/About'
-import { ResetPassword } from '@pages/resetPassword/ResetPassword'
-import { Account } from '@pages/account/Account'
+import { Layout } from './layout'
+import { Cart, NotFound, Home, Privacy, About, ResetPassword, Account } from '@pages/index'
 
 export const router = createBrowserRouter([
   {
