@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Cart } from '@pages/cart/page'
-import { NotFound } from '@pages/notFound/page'
+import { Cart } from '@pages/cart/Cart'
+import { NotFound } from '@pages/notFound/NotFound'
 import { Layout } from './layout/layout'
 import { Home } from '@pages/home/Home'
 
-import { Privacy } from './pages/privacy/privacy'
+import { Privacy } from './pages/privacy/Privacy'
 import { About } from '@pages/about/About'
 import { ResetPassword } from '@pages/resetPassword/ResetPassword'
 import { Account } from '@pages/account/Account'
