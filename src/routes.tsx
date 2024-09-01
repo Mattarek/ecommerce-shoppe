@@ -5,7 +5,7 @@ import { Layout } from './layout/layout'
 import { Home } from '@pages/home/Home'
 
 import { Privacy } from './pages/privacy/privacy'
-import { About } from '@pages/about/page'
+import { About } from '@pages/about/About'
 import { ResetPassword } from '@pages/resetPassword/ResetPassword'
 import { Account } from '@pages/account/Account'
 
