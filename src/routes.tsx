@@ -7,6 +7,7 @@ import { Home } from '@pages/home/Home'
 import { Privacy } from './pages/privacy/privacy'
 import { About } from '@pages/about/page'
 import { ResetPassword } from '@pages/resetPassword/ResetPassword'
+import { Account } from '@pages/account/Account'
 
 export const router = createBrowserRouter([
   {
@@ -37,7 +38,8 @@ export const router = createBrowserRouter([
         path: '/contact'
       },
       {
-        path: '/account'
+        path: '/account',
+        element: <Account />
       },
       {
         path: '/recovery'

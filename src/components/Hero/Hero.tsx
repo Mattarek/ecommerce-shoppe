@@ -8,7 +8,7 @@ export const Hero = () => {
       <img className="hero__image" src={heroPhoto} alt="Hero img with girl" />
       <div className="hero__description">
         <h2 className="hero__description-title">Gold Big Hoops</h2>
-        <h5 className="hero__description-price">$ 68.00</h5>
+        <span className="hero__description-price">$ 68.00</span>
         <Link to="products">
           <button className="hero__description-button">View Product</button>
         </Link>

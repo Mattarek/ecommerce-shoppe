@@ -5,14 +5,12 @@ import {
   shoppe,
   cartActive,
   hamburger,
-  cartOne,
   elipse,
   line,
   hamburgerActive
 } from '@assets/index'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.scss'
-import HamburgerMenu from '@components/HamburgerMenu/HamburgerMenu'
 
 interface Props {
   menuMobile: boolean
@@ -61,10 +59,9 @@ export const Navbar = ({ menuMobile, setMenuMobile }: Props) => {
         <div className="navbar__mobile">
           <div className="navbar__cart">
             <img className="navbar__cartActive" src={cartActive} alt="Cart active icon" />
-            <img className="navbar__cartActiveOne" src={cartOne} alt="Cart one product signal" />
             <img className="navbar__elipse" src={elipse} alt="Elipse" />
           </div>
-          <div>
+          <div className="navbar__hamburger">
             <button
               className="navbar__menu-switch-button"
               onClick={() => {
