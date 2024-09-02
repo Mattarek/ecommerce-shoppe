@@ -1,3 +1,5 @@
-export * from './Hero'
-export * from './ProductsList'
-export * from './Hero'
+export { Hero } from './Hero'
+export { MenuMobile } from './MenuMobile'
+export { ProductsList } from './ProductsList'
+export { SearchBar } from './SearchBar'
+export { Slider } from './Slider'

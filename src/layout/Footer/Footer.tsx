@@ -1,8 +1,11 @@
 import { arrow, facebook, instagram, lineFooter, linkedin, twitter } from '@assets/index'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 import './footer.scss'
 
 export const Footer = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+
   return (
     <footer className="footer">
       <div className="footer__mobile">
@@ -62,11 +65,15 @@ export const Footer = () => {
         <div className="footer__desktop-right">
           <div className="footer__input">
             <input
-              type="text"
+              value={newsletterEmail}
+              onChange={e => setNewsletterEmail(e.target.value)}
+              type="email"
               className="footer__input-field"
               placeholder="Give an email, get the newsletter."
             />
-            <img src={arrow} alt="Arrow from input" className="footer__input-arrow" />
+            <button className="footer__input-button">
+              <img src={arrow} alt="Arrow from input" className="footer__input-arrow" />
+            </button>
           </div>
           <div className="footer__socials">
             <div className="footer__socials-position">

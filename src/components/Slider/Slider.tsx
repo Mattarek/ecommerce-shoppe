@@ -5,7 +5,7 @@ interface SliderProps {
   images: string[]
 }
 
-const Slider: React.FC<SliderProps> = ({ images }) => {
+export const Slider: React.FC<SliderProps> = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const sliderRef = useRef<HTMLDivElement>(null)
 
@@ -67,5 +67,3 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
     </div>
   )
 }
-
-export default Slider

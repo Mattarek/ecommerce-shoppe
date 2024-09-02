@@ -1,12 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Cart } from '@pages/cart/page'
-import { NotFound } from '@pages/notFound/page'
 import { Layout } from './layout/layout'
-import { Home } from '@pages/home/Home'
-
-import { Privacy } from './pages/privacy/privacy'
-import { About } from '@pages/about/page'
-import { ResetPassword } from '@pages/resetPassword/ResetPassword'
+import { Privacy, About, Home, ResetPassword, NotFound, Cart, Shop } from '@pages/index'
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +15,8 @@ export const router = createBrowserRouter([
         path: '/cart'
       },
       {
-        path: '/shop'
+        path: '/shop',
+        element: <Shop />
       },
       {
         path: '/blog'

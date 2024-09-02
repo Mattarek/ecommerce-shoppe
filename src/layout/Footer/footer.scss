@@ -18,6 +18,11 @@
     width: 100%;
     padding: 0.75rem;
   }
+  &__input-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 
   &__checkbox {
     display: flex;
