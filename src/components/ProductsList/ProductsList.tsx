@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Product } from 'types/types'
-
 import './ProductsList.scss'
+
 interface Props {
   products: Product[]
 }

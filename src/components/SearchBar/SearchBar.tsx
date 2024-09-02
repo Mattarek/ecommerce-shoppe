@@ -3,7 +3,7 @@ import './SearchBar.scss'
 
 export const SearchBar = () => {
   return (
-    <div>
+    <div className="searchBar__container">
       <img src={searchLoop} alt="Search loop" className="searchLoop" />
       <input className="searchBar" placeholder="Search" />
     </div>

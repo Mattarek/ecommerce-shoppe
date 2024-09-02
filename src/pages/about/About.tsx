@@ -28,8 +28,8 @@ export const About = () => {
           mauris eget arcu facilisis consequat sed eu felis.
         </p>
         <ul className="ourStory__item-list">
-          <li>● consectetur adipiscing elit. Aliquam placerat</li>
-          <li>● Lorem ipsum dolor sit amet consectetur </li>
+          <li>consectetur adipiscing elit. Aliquam placerat</li>
+          <li>Lorem ipsum dolor sit amet consectetur </li>
         </ul>
       </div>
       <div className="ourStory__item">

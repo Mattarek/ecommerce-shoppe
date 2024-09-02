@@ -20,6 +20,7 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
   }, [totalSlides])
 
   useEffect(() => {
+    //userLayoutEffect - do sprawdzenia, render widoku, odpalenie efektu, dlatego czasem zaraz po wejsciu moze byc przeskok
     const slider = sliderRef.current
     if (slider) {
       slider.style.transition = currentSlide === totalSlides ? 'none' : 'transform 0.5s ease-in-out'
@@ -28,7 +29,6 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
       if (currentSlide === totalSlides) {
         setTimeout(() => {
           setCurrentSlide(0)
-          slider.style.transition = 'none'
           slider.style.transform = 'translateX(0)'
         }, 2000)
       }

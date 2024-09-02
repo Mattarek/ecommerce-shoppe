@@ -4,7 +4,7 @@ import profile from './profile.svg'
 import search from './search.svg'
 import cartActive from './cartActive.svg'
 import hamburger from './hamburger.svg'
-import hamburgerX from './hamburgerX.svg'
+import hamburgerActive from './hamburgerActive.svg'
 import instagram from './instagram.svg'
 import linkedin from './linkedin.svg'
 import arrow from './arrow.svg'
@@ -37,6 +37,7 @@ export {
   shoppe,
   instagram,
   hamburger,
+  hamburgerActive,
   linkedin,
   arrow,
   facebook,
@@ -52,6 +53,5 @@ export {
   LireEarring,
   PlaineNeckle,
   YukiHairPinSetOf3,
-  xIconForInput,
-  hamburgerX
+  xIconForInput
 }

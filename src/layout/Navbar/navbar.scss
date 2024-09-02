@@ -1,16 +1,23 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 0.1rem solid var(--color-gray);
 
   &__cart {
-    margin-right: 1rem;
+    position: relative;
+
+    margin-right: 0.5rem;
   }
 
   &__cartimg {
     position: relative;
+    width: 2rem;
+  }
+
+  &__hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
     width: 2rem;
   }
 
@@ -23,8 +30,8 @@
 
   &__elipse {
     position: absolute;
-    top: 3px;
-    right: 34px;
+    top: -0.15rem;
+    left: 0.55rem;
   }
 
   &__mobile {
@@ -33,7 +40,6 @@
     position: relative;
     transform: scale(1.5);
     align-items: center;
-    margin-right: 1rem;
   }
 
   &__cartActive {
@@ -44,6 +50,20 @@
     display: flex;
     justify-content: right;
     width: 30%;
+
+    @media (min-width: 1080px) {
+      &__menu {
+        width: 40%;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      &__menu {
+        width: 30%;
+        align-items: center;
+      }
+    }
   }
 
   &__desktop {
@@ -56,70 +76,50 @@
   }
 
   @media (min-width: 480px) {
-    .navbar {
-      &__menu {
-        width: 50%;
-      }
+    &__menu {
+      width: 50%;
     }
   }
 
   @media (min-width: 768px) {
-    .navbar {
-      &__mobile {
-        display: none;
-      }
+    border-bottom: 0.1rem solid var(--color-gray);
 
-      &__links {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-      }
-
-      &__item {
-        text-decoration: none;
-        color: black;
-      }
-
-      &__desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      &__separator {
-        display: flex;
-        align-items: center;
-      }
-
-      &__icons {
-        display: flex;
-        justify-content: space-between;
-        width: 33%;
-      }
-
-      &__menu {
-        width: 45%;
-        align-items: center;
-      }
+    &__mobile {
+      display: none;
     }
-  }
 
-  @media (min-width: 1080px) {
-    .navbar {
-      &__menu {
-        width: 40%;
-        align-items: center;
-      }
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
     }
-  }
 
-  @media (min-width: 1440px) {
-    .navbar {
-      &__menu {
-        width: 30%;
-        align-items: center;
-      }
+    &__item {
+      text-decoration: none;
+      color: black;
+    }
+
+    &__desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__separator {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: space-between;
+      width: 33%;
+    }
+
+    &__menu {
+      width: 45%;
+      align-items: center;
     }
   }
 }

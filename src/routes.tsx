@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Layout } from './layout/layout'
-import { Privacy, About, Home, ResetPassword, NotFound, Cart, Shop } from '@pages/index'
+import { Layout } from './layout'
+import { Cart, NotFound, Home, Privacy, About, ResetPassword, Account } from '@pages/index'
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +32,8 @@ export const router = createBrowserRouter([
         path: '/contact'
       },
       {
-        path: '/account'
+        path: '/account',
+        element: <Account />
       },
       {
         path: '/recovery'
